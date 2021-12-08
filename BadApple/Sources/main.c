@@ -18,7 +18,6 @@ int main(void)
     UINT br;
     
     u8 readBuff[1024];
-    u32 readAddr = 4976640; // 通过FATFS得到
     u16 numOfImages = 9480;
 
     delay_init();
@@ -36,7 +35,6 @@ int main(void)
     {
         f_read(&fp, readBuff, 1024, &br);
         OLED_DrawImage(readBuff);
-        readAddr += 1024;
         delay_ms(10); // 控制帧率
     }
     
@@ -44,7 +42,7 @@ int main(void)
     
     delay_ms(100);
     OLED_Reverse();
-    OLED_ShowString(0, 0, "THANK YOU");
+    OLED_ShowString(0, 0, "THANK YOU.");
     
     while (1)
     {

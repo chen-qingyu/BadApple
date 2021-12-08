@@ -18,7 +18,7 @@ BadApple是让OLED显示动画的工程
 
 killer.bat是删除多余的工程中间文件的批处理代码
 
-readme.txt是这个文本文件
+readme.md是这个文本文件
 
 ---
 
