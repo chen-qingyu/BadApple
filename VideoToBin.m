@@ -9,18 +9,21 @@ IMAGE_HEIGHT = 64;
 PATH = './images/';
 POSTFIX = '.bmp';
 
-numOfImages = 9480; % video.NumberOfFrames
+% numOfImages = 9480; % video.NumberOfFrames
 
-% % 处理视频
-% video = VideoReader(VIDEO_NAME);
-% numOfImages = video.NumberOfFrames; % 9480
-% for i = 1 : numOfImages
-%     frame = read(video, i);
-%     frame = imresize(frame, [IMAGE_HEIGHT IMAGE_WIDTH]); % 调整大小为128x64
-%     name = sprintf('%04d', i - 1);
-%     path = [PATH, name, POSTFIX];
-%     imwrite(frame, path); % 保存帧为BMP图片
-% end
+% 处理视频
+if exist(PATH, 'dir') == 0
+    mkdir(PATH);
+end
+video = VideoReader(VIDEO_NAME);
+numOfImages = video.NumberOfFrames; % 9480
+for i = 1 : numOfImages
+    frame = read(video, i);
+    frame = imresize(frame, [IMAGE_HEIGHT IMAGE_WIDTH]); % 调整大小为128x64
+    name = sprintf('%04d', i - 1);
+    path = [PATH, name, POSTFIX];
+    imwrite(frame, path); % 保存帧为BMP图片
+end
 
 
 % 读取并处理图片
