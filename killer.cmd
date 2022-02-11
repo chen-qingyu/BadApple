@@ -1,4 +1,4 @@
-%官方给的%
+% 瀹樻柟缁欑殑
 del *.bak /s
 del *.ddk /s
 del *.edk /s
@@ -25,14 +25,14 @@ del *.sct /s
 del *.map /s
 del JLinkLog.txt /s
 
-%自己加的%
+% 鑷繁鍔犵殑
 del *.ini /s
 del *.dbgconf /s
 del *.uvguix.* /s
 del *.uvgui.* /s
 del *.m51 /s
 
-%删除空文件夹%
-for /f "tokens=*" %%i in ('dir/s/b/ad^|sort /r') do rd "%%i"
+% 鍒犻櫎绌烘枃浠跺す
+for /f "tokens=*" %%i in ('dir/s/b/ad^|sort/r') do rd "%%i"
 
-exit
+pause
