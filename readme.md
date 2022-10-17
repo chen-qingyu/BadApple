@@ -29,3 +29,7 @@ readme.md是这个文本文件
 2. 用USB工程将bin文件从电脑导入W25Q128
 
 3. 连接好电路，运行BadApple工程
+
+---
+
+详情请见： https://zhuanlan.zhihu.com/p/198400688
