@@ -16,9 +16,9 @@ USB是将bin文件写入W25Q128的工程
 
 BadApple是让OLED显示动画的工程
 
-killer.bat是删除多余的工程中间文件的批处理代码
+killer.bat是删除多余的工程中间文件的批处理脚本
 
-readme.md是这个文本文件
+README.md是这个文本文件
 
 ---
 

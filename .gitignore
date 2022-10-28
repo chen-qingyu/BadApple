@@ -1,4 +1,5 @@
 DebugConfig/
 Listings/
+# !Objevts/*.hex
 Objects/
 *.uvguix.*
