@@ -2,6 +2,12 @@
 
 ---
 
+MCU: STM32F103
+
+OLED: 7-Pin SPI SSD1306
+
+---
+
 - `BadApple/` 是让 OLED 显示动画的工程
 - `FATFS/` 是将 W25Q128 格式化为 FATFS 的工程
 - `USB/` 是将 bin 文件写入 W25Q128 的工程
